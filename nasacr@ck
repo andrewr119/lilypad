@@ -1,0 +1,153 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Welcome To Colaboratory",
+      "provenance": [],
+      "collapsed_sections": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/andrewr119/lilypad/blob/main/nasacr%40ck\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "y0nKogzDs4xb",
+        "outputId": "e5006f26-f9e8-4735-95bd-58335d80dbc4",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "source": [
+        "!wget nasapaul.com/Nasa.zip"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "--2021-09-03 17:27:48--  http://nasapaul.com/Nasa.zip\n",
+            "Resolving nasapaul.com (nasapaul.com)... 104.21.35.144, 172.67.175.188, 2606:4700:3034::ac43:afbc, ...\n",
+            "Connecting to nasapaul.com (nasapaul.com)|104.21.35.144|:80... connected.\n",
+            "HTTP request sent, awaiting response... 301 Moved Permanently\n",
+            "Location: https://nasapaul.com/Nasa.zip [following]\n",
+            "--2021-09-03 17:27:48--  https://nasapaul.com/Nasa.zip\n",
+            "Connecting to nasapaul.com (nasapaul.com)|104.21.35.144|:443... connected.\n",
+            "HTTP request sent, awaiting response... 200 OK\n",
+            "Length: 821131 (802K) [application/zip]\n",
+            "Saving to: ‘Nasa.zip’\n",
+            "\n",
+            "Nasa.zip            100%[===================>] 801.89K   238KB/s    in 3.4s    \n",
+            "\n",
+            "2021-09-03 17:27:53 (238 KB/s) - ‘Nasa.zip’ saved [821131/821131]\n",
+            "\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "_Rtvahl0s930",
+        "outputId": "6662af72-16f8-41eb-c7fa-6cd8b89acb9e",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "source": [
+        "!unzip Nasa.zip"
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Archive:  Nasa.zip\n",
+            "   creating: Nasa/\n",
+            "  inflating: Nasa/1                  \n",
+            "  inflating: Nasa/n                  \n",
+            "  inflating: Nasa/nhdd               \n",
+            " extracting: Nasa/port               \n",
+            "  inflating: Nasa/pscan2             \n",
+            "  inflating: Nasa/screen             \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "2tHG879btCAs",
+        "outputId": "81e0ef46-cbd9-4e46-c3df-03e14942c84b",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "source": [
+        "cd Nasa"
+      ],
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[Errno 2] No such file or directory: 'Nasa'\n",
+            "/content/Nasa\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "eRrWUN8ftEBb",
+        "outputId": "a4d62280-6776-4e66-8745-d088da44490a",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "source": [
+        "ls"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1  n  nhdd  port  pscan2  screen\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "n5yuOejltFQK"
+      },
+      "source": [
+        "./n <Class>"
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
